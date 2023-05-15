@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 const Jobitem = ({item,isdark}) => {
   const {pathname} = useLocation()
   return (
-    <Link to={`/details/${item.url}`}>
+    <Link to={`${item.url}`}>
     <div className={` flex gap-3 flex-col p-8 rounded-lg ${isdark ? 'bg-[#19202D] duration-200':'bg-white duration-200'} `}>
                   <div style={{backgroundColor:item.bgcolor}} className={`w-12 h-12 -mt-14 rounded-2xl grid place-items-center `} >
                   <img src={item.logo} alt="" />
