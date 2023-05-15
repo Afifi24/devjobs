@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import localicondesk from '../assets/desktop/icon-location.svg';
 import { motion } from 'framer-motion';
 
-const Popup = ({ setHideshow, hideshow,isdark }) => {
+const Popup = ({ setHideshow, hideshow,isdark,setFulltime,fulltime,setInputLocal,inputLocal }) => {
   const useref = useRef();
 
   const closelocation = (e) => {
@@ -29,11 +29,11 @@ const Popup = ({ setHideshow, hideshow,isdark }) => {
         >
           <div className='w-full border-b flex gap-2 items-center'>
             <img className='' src={localicondesk} alt='' />
-            <input type='text' className='p-3 bg-transparent outline-none w-full' placeholder='Filter by location...' />
+            <input value={inputLocal} onChange={(e)=>setInputLocal(e.target.value)} type='text' className='p-3 bg-transparent outline-none w-full' placeholder='Filter by location...' />
           </div>
           <div className='w-full flex flex-col py-4 gap-6 '>
             <div className='flex w-full items-center gap-3 '>
-              <input type='checkbox' className='h-5 bg-transparent w-5 outline-none ' />
+              <input value={fulltime} onChange={()=>setFulltime(!fulltime)} type='checkbox' className='h-5 bg-transparent w-5 outline-none ' />
               <p className='font-semibold  text-md '>Full Time Only</p>
             </div>
             <button className='px-4 w-full lg:px-6 py-3 font-semibold text-white bg-[#5964E0] rounded-md '>

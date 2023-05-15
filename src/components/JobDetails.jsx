@@ -19,7 +19,7 @@ useEffect(()=>{
          <div className={` ${isdark ? 'bg-[#19202D] text-white duration-200':'bg-[#FFFFFF] duration-200'}  flex gap-4  flex-col md:flex-row  w-full relative -translate-y-14 md:justify-between  pb-7 md:pb-0 min-h-[9rem] rounded-xl`}>
             <div className='flex  flex-col md:flex-row items-center justify-center  md:gap-10'>
                 <div className='-translate-y-5 md:translate-y-0 grid place-items-center rounded-xl h-12 w-12 md:rounded-bl-md md:rounded-tl-md md:h-full md:rounded-none md:w-[140px] ' style={{backgroundColor:currentjob?.bgcolor}}>
-                  <img className='md:w-1/2 w-1/3' src={currentjob?.logo} alt="" />
+                  <img className='md:w-1/2 w-2/3' src={currentjob?.logo} alt="" />
               
                 </div>
                  <div className='flex h-full items-center md:items-start justify-center flex-col gap-2'>
@@ -30,7 +30,7 @@ useEffect(()=>{
             
             <div className=' md:mr-10 flex items-center justify-center '>
             
-            <button className={` ${isdark ? 'bg-[#3e424a] hover:bg-[#535862] text-white':'bg-[#e4e4f8] hover:bg-[#C5C9F4]'} px-5 py-3 rounded-md text-[#5964E0] duration-200 font-bold  `}>Company Site</button>
+            <button className={` ${isdark ? 'bg-[#3e424a] hover:bg-[#535862] text-white':'bg-[#e4e4f8] hover:bg-[#C5C9F4]'} px-5 py-3 rounded-md text-[#5964E0] duration-200 font-bold  `}><a target='_black' href='https://www.bird.co/'>Company Site</a></button>
             </div>
          </div>
          <div className={` flex flex-col gap-10 p-8 md:p-12 rounded-md min-h-screen ${isdark ? 'bg-[#19202D] text-white duration-200':'bg-[#FFFFFF] duration-200'}`}>
@@ -44,7 +44,7 @@ useEffect(()=>{
                <p className='text-[#5964E0] font-semibold'>{currentjob?.country}</p>
             </div>
             <div className='w-full md:w-[130px]'>
-              <button className={`px-5 w-full py-3 bg-[#5964E0] duration-200 rounded-md hover:opacity-70 text-white font-bold `}>Apply Now</button>
+              <button className={`px-5 w-full py-3 bg-[#5964E0] duration-200 rounded-md hover:opacity-70 text-white font-bold `}><a target='_blank' href='https://www.bird.co/'>Apply Now</a></button>
             </div>
           </div>
           <div className='flex flex-col gap-10'>
@@ -55,9 +55,6 @@ useEffect(()=>{
                 { currentjob?.ul?.map(item=>(
                   <li className='  '> <span className=' ml-3 text-[#8A8298] text-md md:text-lg'>{item}</span></li>
                 ))}
-                {/* <li className=''><span className='text-[#8A8298] text-md md:text-lg ml-3'>Have Haskell or Purescript knowledge/hacking under your belt.</span></li>
-                <li className=' '><span  className='text-[#8A8298] text-md md:text-lg ml-3'>An experienced engineer familiar with automated testing and deployment.</span></li>
-                <li className=' '><span  className='text-[#8A8298] text-md md:text-lg ml-3' >Experienced with functional programming and domain-driven design or simply interested and capable of learning on the job.</span></li> */}
                </ul>
             <h1 className={`text-[#19202D] text-lg md:text-xl font-bold ${isdark ? 'text-white':''}`}>What You Will Do</h1>
             <p className='text-[#8A8298] text-md md:text-lg text-lg'>{currentjob?.whattodo}</p>
@@ -65,9 +62,6 @@ useEffect(()=>{
                 {currentjob?.ol.map(item=>(
                   <li className='  '> <span className=' ml-3 text-[#8A8298] font-normal text-md md:text-lg'>{item}</span></li>
                 ))}
-                {/* <li className=''><span className='text-[#8A8298] font-normal text-md md:text-lg ml-3'>Contribute to the design of our conversational engine and the architecture supporting it</span></li>
-                <li className=' '><span  className='text-[#8A8298] font-normal text-md md:text-lg ml-3'>Design new UIs, working closely with users, stakeholders and the backend team.</span></li>
-                <li className=' '><span  className='text-[#8A8298] font-normal text-md md:text-lgml-3' >Maximize robustness, performance, and scalability of solutions</span></li> */}
                </ul>
             
           </div>
@@ -80,7 +74,7 @@ useEffect(()=>{
               <p className='text-[#8A8298]  text-md md:text-lg'>{currentjob?.title}</p>
             </div>
             <div className='w-full md:w-[140px]'>
-              <button className=' w-full  py-4 bg-[#5964E0] duration-200 rounded-md hover:opacity-70 text-white font-bold text-sm md:text-[17px]'>Apply Now</button>
+              <button className=' w-full  py-4 bg-[#5964E0] duration-200 rounded-md hover:opacity-70 text-white font-bold text-sm md:text-[17px]'><a target='_blank' href='https://www.bird.co/'>Apply Now</a></button>
             </div>
        </div>
       </div>
