@@ -1,13 +1,19 @@
 import React,{useState} from 'react'
 import Nav from './components/Nav'
 import Jobs from './components/Jobs'
+import {Routes,Route} from 'react-router-dom'
+import JobDetails from './components/JobDetails'
 const App = () => {
   const [isdark,setIsdark] = useState(false)
 
   return (
-    <div>
+    <div className='font-KumbhSans'>
       <Nav setIsdark={setIsdark} isdark={isdark}/>
-      <Jobs isdark={isdark}/>
+      <Routes>
+        <Route path='/' element={<Jobs isdark={isdark}/>}/>
+        <Route path='/details/:id' element={<JobDetails isdark={isdark}/>}/>
+      </Routes>
+      
     </div>
   )
 }

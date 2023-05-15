@@ -21,6 +21,7 @@ export const jobsdata = [
         time:'5h ago',
         jobtime:'Full Time',
         bgcolor:'#EA9310',
+        url:'job1',
     },
     {
         id:2,
@@ -31,6 +32,8 @@ export const jobsdata = [
         time:'20h ago',
         jobtime:'Part Time',
         bgcolor:'#E54B24',
+        url:'job2',
+
     },
     {
         id:3,
@@ -41,6 +44,8 @@ export const jobsdata = [
         time:'1d ago',
         jobtime:'Part Time',
         bgcolor:'#353641',
+        url:'job3',
+
     },
     {
         id:4,
@@ -51,6 +56,8 @@ export const jobsdata = [
         time:'2d ago',
         jobtime:'Full Time',
         bgcolor:'#2F4FC6',
+        url:'job4',
+
     },
     {
         id:5,
@@ -61,6 +68,8 @@ export const jobsdata = [
         time:'2d ago',
         jobtime:'Part Time',
         bgcolor:'#132034',
+        url:'job5',
+
     },
     {
         id:6,
@@ -71,6 +80,8 @@ export const jobsdata = [
         time:'4d ago',
         jobtime:'Part Time',
         bgcolor:'#4E1853',
+        url:'job6',
+
     },
     {
         id:7,
@@ -81,6 +92,8 @@ export const jobsdata = [
         time:'1w ago',
         jobtime:'Full Time',
         bgcolor:'#4721C4',
+        url:'job7',
+
     },
     {
         id:8,
@@ -91,6 +104,8 @@ export const jobsdata = [
         time:'1w ago',
         jobtime:'Full Time',
         bgcolor:'#21437D',
+        url:'job8',
+
     },
     {
         id:9,
@@ -101,6 +116,8 @@ export const jobsdata = [
         time:'1w ago',
         jobtime:'Part Time',
         bgcolor:'#F2DDCA',
+        url:'job9',
+
     },
     {
         id:10,
@@ -111,6 +128,8 @@ export const jobsdata = [
         time:'2w ago',
         jobtime:'Freelance',
         bgcolor:'#1F1F1F',
+        url:'job10',
+
     },
     {
         id:11,
@@ -121,6 +140,8 @@ export const jobsdata = [
         time:'1mo ago',
         jobtime:'Part time',
         bgcolor:'#37C890',
+        url:'job11',
+
     },
     {
         id:12,
@@ -131,6 +152,8 @@ export const jobsdata = [
         time:'1mo ago',
         jobtime:'Part time',
         bgcolor:'#F26818',
+        url:'job12',
+
     },
     {
         id:13,
@@ -141,6 +164,8 @@ export const jobsdata = [
         time:'1mo ago',
         jobtime:'Full time',
         bgcolor:'#F26818',
+        url:'job13',
+
     },
     {
         id:14,
@@ -151,6 +176,8 @@ export const jobsdata = [
         time:'1mo ago',
         jobtime:'Full Time',
         bgcolor:'#F2DDCA',
+        url:'job14',
+
     },
     {
         id:15,
@@ -161,5 +188,7 @@ export const jobsdata = [
         time:'1mo ago',
         jobtime:'Full Time',
         bgcolor:'#E54B24',
+        url:'job15',
+
     }
 ]
