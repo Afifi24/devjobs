@@ -3,6 +3,7 @@ import Search from './Search'
 import img from '../assets/logos/scoot.svg'
 import { jobsdata } from '../Data'
 import Jobitem from './Jobitem'
+import NotFound from './NotFound'
 const Jobs = ({isdark}) => {
   const [inputTitle,setInputTitle] = useState('')
   const [inputLocal,setInputLocal] = useState('')
@@ -24,21 +25,24 @@ const Jobs = ({isdark}) => {
        const filteredTime = jobsdata.filter(elem=>elem.jobtime.toLocaleLowerCase().includes('Full Time)'.toLocaleLowerCase()))
        setSelectjob(filteredTime)
   }
-  console.log(fulltime)
+console.log(selectjob)
   
   return (
     <div className={` z-10 min-h-screen ${isdark ? 'bg-[#121721] duration-200 text-white':'bg-[#F4F6F8] duration-200'} `}>
           <div className=' w-[89%] m-auto'>
              <Search fulltime={fulltime} setFulltime={setFulltime} filterbyTime={filterbyTime} inputLocal={inputLocal} setInputLocal={setInputLocal} filterbyTitle={filterbyTitle} inputTitle={inputTitle} setInputTitle={setInputTitle} isdark={isdark}/>
-             <div className='mt-32 pb-10 grid grid-cols-1 gap-y-14 md:grid-cols-2 lg:grid-cols-3 gap-7'>
-                {
-                  selectjob.map(item=>{
-                    return(
-                      <Jobitem isdark={isdark} item={item} key={item.id}/>
-                    )
-                  })
-                }
-             </div>
+
+             
+             {selectjob ==''?<NotFound/>:<div className='mt-32 pb-10 grid grid-cols-1 gap-y-14 md:grid-cols-2 lg:grid-cols-3 gap-7'>
+             {
+               selectjob.map(item=>{
+                 return(
+                   <Jobitem isdark={isdark} item={item} key={item.id}/>
+                 )
+               })
+             }
+          </div>}
+             
 
           </div> 
     </div>

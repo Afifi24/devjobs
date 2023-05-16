@@ -29,12 +29,11 @@ const Search = ({isdark,setInputTitle,inputTitle,filterbyTitle,setInputLocal,inp
           <p className='font-semibold hidden lg:block text-lg '>Full Time Only</p>
           <p className='font-semibold  md:block lg:hidden text-md '>Full Time </p>
           </div>
-          <button  className='px-4 lg:px-6 py-2 font-semibold text-white bg-[#5964E0] rounded-lg '>Search</button>
+          <button  className='px-4 hover:opacity-70 duration-200 lg:px-6 py-2 font-semibold text-white bg-[#5964E0] rounded-lg '>Search</button>
         </div>
-        {/* onClick={filterbyTitle} */}
          {
            hideshow &&
-          <Popup inputLocal={inputLocal} setInputLocal={setInputLocal}  fulltime={fulltime} setFulltime={setFulltime}  isdark={isdark}  hideshow={hideshow} setHideshow={setHideshow}/>}
+          <Popup inputLocal={inputLocal} setInputLocal={setInputLocal}  fulltime={fulltime} setFulltime={setFulltime} filterbyTitle={filterbyTitle}  isdark={isdark}  hideshow={hideshow} setHideshow={setHideshow}/>}
     </form>
   )
 }

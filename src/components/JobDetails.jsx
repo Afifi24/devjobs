@@ -10,7 +10,6 @@ const url = location.pathname
 useEffect(()=>{
    const selectedjob = job.filter(item=>item.url === url)
    setCurrentjob(selectedjob[0])
-   console.log(currentjob)
 },[url])
   return (
      

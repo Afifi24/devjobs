@@ -13,7 +13,7 @@ const Jobitem = ({item,isdark}) => {
                     <p>{item.time}</p>
                     <p className='flex items-center gap-2 justify-center'> <span>.</span> {item.jobtime}</p>
                   </div>
-                  <h2 className='font-bold text-xl'>{item.title}</h2>
+                  <h2 className='font-bold text-lg'>{item.title}</h2>
                   <p className='text-[#8A8298]'>{item.profile}</p>
                   <h2 className='mt-5 text-[#5964E0] font-semibold'>{item.country}</h2>
         </div>
